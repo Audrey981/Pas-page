@@ -10,21 +10,23 @@ const { blok } = Astro.props
   <blockquote class="text-center lg:mx-auto lg:w-3/5">
     {
       blok.image && blok.image?.filename?.endsWith('.svg') && (
-        <div class="mx-auto w-20 h-auto sm:w-28">
+        <a class="mx-auto w-20 h-auto sm:w-28" href={blok.url}>
           <InlineSvg src={blok.image.filename} />
-        </div>
+        </a>
       )
     }
     {
       blok.image && !blok.image?.filename?.endsWith('.svg') && blok.image?.filename && (
-        <Image
-          src={blok.image.filename}
-          alt={blok.image.filename}
-          class="rounded-[var(--radius-box)] mx-auto w-20 h-auto sm:w-28"
-          priority={blok.image.loading === 'eager' ? true : false}
-          layout="constrained"
-          inferSize
-        />
+        <a href={blok.url}>
+          <Image
+            src={blok.image.filename}
+            alt={blok.image.filename}
+            class="rounded-[var(--radius-box)] mx-auto w-20 h-auto sm:w-28"
+            priority={blok.image.loading === 'eager' ? true : false}
+            layout="constrained"
+            inferSize
+          />
+        </a>
       )
     }
     {
