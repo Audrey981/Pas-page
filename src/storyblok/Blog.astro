@@ -17,7 +17,7 @@ const { blok } = Astro.props
               <Image
                 src={blok.image.filename}
                 alt={blok.image.alt}
-                class="shadow rounded-[var(--radius-box)] aspect-[4/3] object-cover object-center w-full"
+                class="rounded-[var(--radius-box)] aspect-[4/3] object-contain object-center w-full"
                 priority
                 layout="constrained"
                 inferSize
