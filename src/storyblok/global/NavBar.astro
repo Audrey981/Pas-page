@@ -88,7 +88,7 @@ const currentPath = Astro.url.pathname
                 menu.map((item) => {
                   if (item.submenu.length > 0) {
                     return (
-                      <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--adaptive:adaptive] [--is-collapse:true] md:[--is-collapse:false]">
+                      <li class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--adaptive:adaptive] [--is-collapse:true] md:[--is-collapse:false]">
                         <button
                           id="hs-header-base-dropdown"
                           type="button"
@@ -144,7 +144,7 @@ const currentPath = Astro.url.pathname
                             })}
                           </div>
                         </div>
-                      </div>
+                      </li>
                     )
                   } else {
                     if (item.slug === currentPath) {
