@@ -49,6 +49,18 @@ h6 {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "General Sans";
+  src: url("/fonts/General Sans.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+}
+
 .container {
   @apply w-[calc(100%_-_2.5rem)] lg:w-[calc(100%_-_4rem)] mx-auto max-w-lg md:max-w-3xl lg:max-w-5xl xl:max-w-7xl;
 }
