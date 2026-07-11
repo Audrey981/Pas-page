@@ -38,7 +38,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Apfel", sans-serif;
+  font-family: "Funnel Display", sans-serif;
+}
+
+@font-face {
+  font-family: "Funnel Display";
+  src: url("/fonts/funnel-display.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 .container {
