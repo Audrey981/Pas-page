@@ -50,15 +50,15 @@ h6 {
 }
 
 @font-face {
-  font-family: "General Sans";
-  src: url("/fonts/General Sans.woff2") format("woff2");
+  font-family: "Funnel sans";
+  src: url("/fonts/funnel-sans.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "General Sans", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
 }
 
 .container {
