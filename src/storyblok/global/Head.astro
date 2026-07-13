@@ -5,7 +5,6 @@
 
 import { useStoryblokApi } from '@storyblok/astro'
 import isPreview from '../../utils/isPreview'
-import Analytics from '@vercel/analytics/astro'
 
 import { converter, formatCss } from 'culori'
 
@@ -140,5 +139,4 @@ const {
   </noscript>
 
   <slot />
-  <Analytics />
 </head>
