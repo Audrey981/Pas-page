@@ -5,6 +5,8 @@ import NavBar from '../storyblok/global/NavBar.astro'
 import { useStoryblokApi } from '@storyblok/astro'
 import isPreview from '../utils/isPreview'
 import SpeedInsights from '@vercel/speed-insights/astro'
+import Analytics from '@vercel/analytics/astro'
+
 
 const storyblokApi = useStoryblokApi()
 const { data } = await storyblokApi.get('cdn/stories/global/navigation', {
@@ -66,7 +68,6 @@ const logo = logoData.story.content.logo
     ogImageAlt={ogImageAlt}
     schema={schema}
   />
-  <SpeedInsights />
 
   <body class="is-loading overflow-x-hidden">
     <NavBar logo={logo} name="myCompany" menu={menu} breakpoint="sm" />
@@ -83,6 +84,9 @@ const logo = logoData.story.content.logo
       </svg>
     </a>
     <Footer logo={logo} name={logoData.story.content.brandName} menu={footer} rs={data.story.content.rs} />
+  
+  <SpeedInsights />
+  <Analytics />
 
     <script>
       import 'preline/dist/preline.js'
