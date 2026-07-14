@@ -1,3 +1,15 @@
 {
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/creation-site-web/blog/avantage-creation-site-web-professionnel",
+      "destination": "/blog/avantage-creation-site-web-professionnel/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-site-web/blog/numerique-responsable",
+      "destination": "/blog/numerique-responsable/",
+      "permanent": true
+    }
+  ]
 }
