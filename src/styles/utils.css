@@ -1,65 +1,6 @@
 @reference "./tailwind.css";
 
-@font-face {
-  font-family: "Apfel";
-  src: url("/fonts/ApfelGrotezk-Satt.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: "Apfel";
-  src: url("/fonts/ApfelGrotezk-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Apfel";
-  src: url("/fonts/ApfelGrotezk-Mittel.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Apfel";
-  src: url("/fonts/ApfelGrotezk-Fett.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Funnel Display", sans-serif;
-}
-
-@font-face {
-  font-family: "Funnel Display";
-  src: url("/fonts/funnel-display.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Funnel sans";
-  src: url("/fonts/funnel-sans.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-body {
-  font-family: "Funnel Sans", sans-serif;
-}
 
 .container {
   @apply w-[calc(100%_-_2.5rem)] lg:w-[calc(100%_-_4rem)] mx-auto max-w-lg md:max-w-3xl lg:max-w-5xl xl:max-w-7xl;
